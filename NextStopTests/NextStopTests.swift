@@ -30,5 +30,31 @@ class NextStopTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    // MARK: Route class tests
+    // Confirm the Route init will return instance if given valid params
+    func testRouteValidInitialization() {
+        let r0 = Route.init(transportName: "688", stops: ["Ferntree Gully", "Croyton"])
+        XCTAssertNotNil(r0)
+        
+    }
+    // Confirm the Route init will return nil if given invalid params
+    func testRouteInvalidInitialization() {
+        // without transportName
+        let r0 = Route.init(transportName: "", stops: ["Ferntree Gully", "Croyton"])
+        XCTAssertNil(r0)
+        
+        // without bus stop
+        let r1 = Route.init(transportName: "688", stops: [])
+        XCTAssertNil(r1)
+        
+        // Only starting point
+        let r2 = Route.init(transportName: "688", stops: ["Ferntree Gully"])
+        XCTAssertNil(r2)
+        
+        // The destination and starting point is the same
+        let r3 = Route.init(transportName: "688", stops: ["Ferntree Gully", "Ferntree Gully"])
+        XCTAssertNil(r3)
+    }
 
 }

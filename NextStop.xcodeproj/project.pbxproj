@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103CCFEE2306B65000BA24DE /* RouteListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CCFED2306B65000BA24DE /* RouteListTableViewCell.swift */; };
+		10548959230763D100590138 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10548958230763D100590138 /* Route.swift */; };
 		10E88CB32305543300C65F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E88CB22305543300C65F50 /* AppDelegate.swift */; };
 		10E88CB52305543300C65F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E88CB42305543300C65F50 /* ViewController.swift */; };
 		10E88CB82305543300C65F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E88CB62305543300C65F50 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		103CCFED2306B65000BA24DE /* RouteListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListTableViewCell.swift; sourceTree = "<group>"; };
+		10548958230763D100590138 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		10E88CAF2305543300C65F50 /* NextStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E88CB22305543300C65F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10E88CB42305543300C65F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,9 +104,11 @@
 				10E88CB22305543300C65F50 /* AppDelegate.swift */,
 				10E88CB42305543300C65F50 /* ViewController.swift */,
 				10E88CB62305543300C65F50 /* Main.storyboard */,
+				10548958230763D100590138 /* Route.swift */,
 				10E88CB92305543400C65F50 /* Assets.xcassets */,
 				10E88CBB2305543400C65F50 /* LaunchScreen.storyboard */,
 				10E88CBE2305543400C65F50 /* Info.plist */,
+				103CCFED2306B65000BA24DE /* RouteListTableViewCell.swift */,
 			);
 			path = NextStop;
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				103CCFEE2306B65000BA24DE /* RouteListTableViewCell.swift in Sources */,
+				10548959230763D100590138 /* Route.swift in Sources */,
 				10E88CB52305543300C65F50 /* ViewController.swift in Sources */,
 				10E88CB32305543300C65F50 /* AppDelegate.swift in Sources */,
 			);
